@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup - F1 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Login Form -->
+            <div class="form-box login-box active">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input 
+                            type="email" 
+                            id="loginEmail" 
+                            placeholder="Enter your email" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input 
+                            type="password" 
+                            id="loginPassword" 
+                            placeholder="Enter your password" 
+                            required
+                        >
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <p class="switch-form">
+                    Don't have an account? 
+                    <a href="#" class="toggle-form">Sign Up</a>
+                </p>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="form-box signup-box">
+                <h2>Create Account</h2>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="signupName" 
+                            placeholder="Enter your full name" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input 
+                            type="email" 
+                            id="signupEmail" 
+                            placeholder="Enter your email" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input 
+                            type="password" 
+                            id="signupPassword" 
+                            placeholder="Create a password" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="signupConfirmPassword">Confirm Password</label>
+                        <input 
+                            type="password" 
+                            id="signupConfirmPassword" 
+                            placeholder="Confirm your password" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required> 
+                            I agree to the Terms and Conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+                <p class="switch-form">
+                    Already have an account? 
+                    <a href="#" class="toggle-form">Login</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Decorative Side Panel -->
+        <div class="info-panel">
+            <div class="info-content">
+                <h1>F1 2026</h1>
+                <p>Experience the future of Formula 1 racing</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <span class="icon">🏁</span>
+                        <p>Live Race Updates</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">📊</span>
+                        <p>Detailed Statistics</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">🎯</span>
+                        <p>Driver Rankings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
